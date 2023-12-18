@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Tabs Search",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "action": {
+    "default_title": "Tabs Search",
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "toggle-popup": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+T",
+        "mac": "MacCtrl+Shift+T"
+      },
+      "description": "Toggle Popup"
+    }
+  },
+  "host_permissions": ["https://developer.chrome.com/*"],
+  "permissions": ["tabs","activeTab", "storage"]
+}
